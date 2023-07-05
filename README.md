@@ -1,15 +1,16 @@
 # Steampunk Rotating Earth Widget
  
-U-Boat Dual Time Gauge Yahoo Widget, written in Javascript and XML for the Yahoo 
+Steampunk Rotating EarthYahoo Widget, written in Javascript and XML for the Yahoo 
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
 Apple Mac.
 
 
-This U-Boat widget is an attractive dieselpunk Yahoo widget for your desktop. 
-It is a simple multi-timezone stopwatch and clock. Functional and gorgeous at 
-the same time. This Widget is a moveable widget that you can move anywhere 
-around the desktop as you require.
-
+This Steampunk Rotating Earth is an attractive dieselpunk Yahoo widget for your 
+desktop. This Konfabulator/ yahoo widget provides a simple rotating globe that 
+can rotate at two speeds. The animation comes from thirty six medium resolution 
+images, played one after the other, frame by frame giving a simulation of the 
+rotating earth. Functional and gorgeous at the same time. This Widget is a 
+moveable widget that you can move anywhere around the desktop as you require.
 
 The widget can be resized - Hover the cursor over the widget. Press the CTRL key 
 and use your mousewheel up or down. The widget will resize dynamically.
@@ -17,8 +18,7 @@ and use your mousewheel up or down. The widget will resize dynamically.
 All javascript widgets need an engine to function, in this case the widget uses 
 the Yahoo Widget Konfabulator engine. The engine interprets the javascript and 
 creates the widget according to the XML description and using the images you 
-provide. Designed and built by me with much more than a little help from Harry 
-Whitfield.
+provide. Designed and built by me.
 
 
 Built using: 
