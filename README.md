@@ -4,6 +4,8 @@ Steampunk Rotating EarthYahoo Widget, written in Javascript and XML for the Yaho
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
 Apple Mac.
 
+![globe](https://github.com/yereverluvinunclebert/Steampunk-Rotating-Earth-Widget/assets/2788342/03b287af-dddf-4f88-b646-ad61db8bcbb4)
+
 
 This Steampunk Rotating Earth is an attractive dieselpunk Yahoo widget for your 
 desktop. This Konfabulator/ yahoo widget provides a simple rotating globe that 
