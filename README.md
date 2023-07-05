@@ -6,6 +6,7 @@ Apple Mac.
 
 ![globe](https://github.com/yereverluvinunclebert/Steampunk-Rotating-Earth-Widget/assets/2788342/03b287af-dddf-4f88-b646-ad61db8bcbb4)
 
+![globe-surround](https://github.com/yereverluvinunclebert/Steampunk-Rotating-Earth-Widget/assets/2788342/0d8c0dc6-f3ea-4bdc-aab4-9e6a27e151e8)
 
 This Steampunk Rotating Earth is an attractive dieselpunk Yahoo widget for your 
 desktop. This Konfabulator/ yahoo widget provides a simple rotating globe that 
