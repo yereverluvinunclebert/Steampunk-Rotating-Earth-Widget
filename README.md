@@ -15,6 +15,8 @@ images, played one after the other, frame by frame giving a simulation of the
 rotating earth. Functional and gorgeous at the same time. This Widget is a 
 moveable widget that you can move anywhere around the desktop as you require.
 
+![globe-on-desktop2](https://github.com/yereverluvinunclebert/Steampunk-Rotating-Earth-Widget/assets/2788342/211db820-4b87-4395-8f4b-1bafd971b7a7)
+
 The widget can be resized - Hover the cursor over the widget. Press the CTRL key 
 and use your mousewheel up or down. The widget will resize dynamically.
 
