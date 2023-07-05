@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget minimumVersion="4.5">
+	<!--
+	Globe Widget
+	Version: 1.0
+	-->
+
+	<about-box>
+		<image>Resources/earthplaque.png</image>
+	</about-box>
+
+	<window visible="false" name="mainWindow" width="400" title="Rotating Earth Globe" height="400" shadow="false">
+		<image visible="true" vOffset="18" name="ring" src="Resources/ring.png" hOffset="19">
+			<tooltip>Click on the outer ring to move or drag the widget to a new location.</tooltip>
+		</image>
+		<image visible="true" vOffset="1" name="globetop" src="Resources/globetop.png" hOffset="149">
+			<tooltip>Click on the outer ring to move or drag the widget to a new location.</tooltip>
+		</image>
+		<image visible="true" vOffset="1" width="330" height="330" name="globe" src="globe/Earth-spinning_1.png" hOffset="1">
+			<onMultiClick>
+				<![CDATA[
+					if (preferences.soundpref.value === "enable") {
+						play(tingingSound, false);
+					}
+					taskcommand = preferences.globeCmdPref.value;
+					performCommand("click");
+				]]>
+			</onMultiClick>
+		</image>
+		<image visible="true" vOffset="1" width="330" height="330" name="glow" src="Resources/glow.png" hOffset="1">
+			<onMultiClick>
+				<![CDATA[
+					if (preferences.soundpref.value === "enable") {
+						play(tingingSound, false);
+					}
+					taskcommand = preferences.globeCmdPref.value;
+					performCommand("click");
+				]]>
+			</onMultiClick>
+		</image>
+		<image
+			src		= "Resources/supportingBar.png"
+			name	= "supportingBar"
+			width	= "164"
+			height	= "312"
+			hOffset	= "6 "
+			vOffset	= "3 "
+			opacity	= "255"
+		/>
+		<image
+			src		= "Resources/toggle1.png"
+			name	= "toggle1"
+			hOffset	= "125 "
+			vOffset	= "4 "
+			width	= "16"
+			height	= "15"
+			opacity	= "255"
+		/>
+		<image
+			src		= "Resources/toggle2.png"
+			name	= "toggle2"
+			hOffset	= "70 "
+			vOffset	= "25 "
+			opacity	= "255"
+			width	= "16"
+			height	= "16"
+		/>
+		<image
+			src		= "Resources/toggle3.png"
+			name	= "toggle3"
+			hOffset	= "25 "
+			vOffset	= "70 "
+			opacity	= "255"
+			width	= "16"
+			height	= "16"
+		/>
+		<image
+			src		= "Resources/toggle4.png"
+			name	= "toggle4"
+			hOffset	= "2 "
+			vOffset	= "142 "
+			opacity	= "255"
+			width	= "16"
+			height	= "16"
+		/>
+		<image
+			src		= "Resources/toggle5.png"
+			name	= "toggle5"
+			hOffset	= "6 "
+			vOffset	= "196 "
+			width	= "16"
+			height	= "16"
+			opacity	= "255"
+		/>
+		<image
+			src		= "Resources/toggle6.png"
+			name	= "toggle6"
+			hOffset	= "30 "
+			vOffset	= "245 "
+			width	= "16"
+			height	= "16"
+			opacity	= "255"
+		/>
+		<image
+			src		= "Resources/toggle7.png"
+			name	= "toggle7"
+			hOffset	= "62 "
+			vOffset	= "278 "
+			opacity	= "255"
+			width	= "16"
+			height	= "16"
+		/>
+		<image
+			src		= "Resources/toggleS.png"
+			name	= "toggleS"
+			hOffset	= "142 "
+			vOffset	= "295 "
+			opacity	= "255"
+			width	= "16"
+			height	= "16"
+		/>
+		<image
+			src		= "Resources/toggleF.png"
+			name	= "toggleF"
+			hOffset	= "189 "
+			vOffset	= "295 "
+			opacity	= "255"
+			width	= "16"
+			height	= "16"
+		/>
+
+		<action trigger="onload">
+			<![CDATA[
+				include("vitality.js");
+				include("globe.js");
+				include("functions.js");
+				startup();
+			]]>
+		</action>
+		
+		  <action trigger="onKeyDown">
+      <![CDATA[
+      if (system.event.keyCode === 116) {
+        print("Pressing F5 " + system.event.keyCode);
+        reloadWidget();
+      }
+      ]]>
+    </action>
+
+		<action trigger="onPreferencesChanged">
+			changePrefs();
+		</action>
+	</window>
+
+	<preferenceGroup name="earth" order="8" icon="Resources/icon.png" title="Earth"/>
+
+	<preference name="earthTurnPref">
+		<title>Rotation</title>
+		<type>popup</type>
+		<option>Slow</option>
+		<option>Fast</option>
+		<defaultValue>Fast</defaultValue>
+		<description>The rotation can be set to fast or slow. Animation looks much smoother when set to fast.</description>
+		<group>earth</group>
+	</preference>
+
+	<preference name="earthSizePref" title="Widget Size" type="popup"
+		defaultValue="60" description="Changes the total size of the earth widget. Vary the percentage and the whole widget will alter in size.">
+		<option>150%</option>
+		<optionValue>150</optionValue>
+		<option>140%</option>
+		<optionValue>140</optionValue>
+		<option>130%</option>
+		<optionValue>130</optionValue>
+		<option>120%</option>
+		<optionValue>120</optionValue>
+		<option>110%</option>
+		<optionValue>110</optionValue>
+		<option>100%</option>
+		<optionValue>100</optionValue>
+		<option>90%</option>
+		<optionValue>90</optionValue>
+		<option>80%</option>
+		<optionValue>80</optionValue>
+		<option>70%</option>
+		<optionValue>70</optionValue>
+		<option>60%</option>
+		<optionValue>60</optionValue>
+		<option>50%</option>
+		<optionValue>50</optionValue>
+		<option>40%</option>
+		<optionValue>40</optionValue>
+		<option>30%</option>
+		<optionValue>30</optionValue>
+		<option>20%</option>
+		<optionValue>20</optionValue>
+		<option>10%</option>
+		<optionValue>10</optionValue>
+		<option>5%</option>
+		<optionValue>5</optionValue>
+		<group>earth</group>
+	</preference>
+
+	<preference name="soundpref">
+		<title>Sound Control:</title>
+		<type>popup</type>
+		<option>enable</option>
+		<optionValue>enable</optionValue>
+		<option>disable</option>
+		<optionValue>disable</optionValue>
+		<description>The widget makes a tiny ding when a command is assigned just to let you know that a command has been triggered. Enable or disable sound as you require.</description>
+		<group>earth</group>
+		<defaultValue>enable</defaultValue>
+	</preference>
+
+	<preference kind="files" group="commands" name="openFilePref" style="open" title="Open File" type="selector" description="Alt+double-clicking on the widget image will open this file."/>
+
+	<preference hidden="false" description="Double-clicking on the widget image will run any command you put in the above box. An example command for Windows might be one to start up Mozilla Thunderbird, eg.	 C:\Program Files\Mozilla Thunderbird\thunderbird.exe. To run Photoshop simply copy/paste the example command from the example box below" name="globeCmdPref" group="settings" title="Widget Command:" type="text"/>
+
+	<preference hidden="false" description="Example command - If you have photoshop CS installed, the command here would start it as long as you have copied and pasted the full command into the top box." name="globeCmdPref2" defaultValue = "C:\Program Files\Adobe\Photoshop CS\Photoshop.exe" group="settings" title="Example Widget Command:" type="text"/>
+
+	<preference hidden="false" description="You can change the pop up globe text at any time to correspond to any function you have assigned to it. If left blank it will display the full command line you have assigned." name="widgetTooltip" group="settings" title="Widget Tooltip:" type="text"/>
+
+	<preference hidden="false" name="sizebar" group="settings" title="Size Bar:" >
+		<type>popup</type>
+		<option>enable</option>
+		<optionValue>enable</optionValue>
+		<option>disable</option>
+		<optionValue>disable</optionValue>
+		<description>Hide the size bar as you require.</description>
+		<group>earth</group>
+		<defaultValue>disable</defaultValue>
+	</preference>
+	
+	   <prefGroup name="development" order="8" icon="Resources/images/development-icon.png" title="Development"/>
+    <preference hidden="false" description="Turning on the debugging will provide extra information in the debug window. To obtain the debug window press SHIFT+CTRL simultaneously whilst right clicking on the Yahoo widget systray icon, then select debug from the drop down menu. You will need to restart the widget properly rather than doing a simple restart for debugging information to appear." name="debugflgPref" group="development" title="Debug:" defaultValue="1" type="popup">
+         <option>Debug OFF</option>
+         <optionValue>0</optionValue>
+         <option>Debug ON</option>
+         <optionValue>1</optionValue>
+     </preference>   
+    <preference hidden="false" description="Default command to run when the gauge receives a double-click. %SystemRoot%/system32/perfmon.exe" name="imageCmdPref" group="development" title="Double-Click command" defaultValue="%SystemRoot%/system32/perfmon.exe" type="text"/>
+    <preference hidden="false" description="Development ONLY: Enter your editor path here along with any command line switches required to open this widget in the editor. This function only operates if the widget has been unpacked and DEBUG is ON. " name="imageEditPref" group="development" title="Default Editor:" defaultValue="" type="text"/>
+ 
+
+	<timer name="earthTimer" ticking="true" interval=".2">
+		<onTimerFired>
+			<![CDATA[
+				if (preferences.earthTurnPref.value !== "Still") {
+					earthTurn();
+				}
+			]]>
+		</onTimerFired>
+	</timer>
+</widget>

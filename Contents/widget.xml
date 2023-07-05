@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<name>Earth Globe</name>
+	<version>1.1</version>
+	<author name = "Dean Beedell" />
+	<platform minVersion = "4.5" />
+	<description>Displays a Rotating Earth Globe that can be made to perform a function.</description>
+	<security>
+		<http>all</http>
+		<applescript>true</applescript>
+		<command>true</command>
+		<filesystem>full</filesystem>
+	</security>
+</metadata>
