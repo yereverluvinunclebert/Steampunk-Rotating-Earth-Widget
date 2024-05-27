@@ -4,6 +4,8 @@ Steampunk Rotating EarthYahoo Widget, written in Javascript and XML for the Yaho
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
 Apple Mac.
 
+This widget is now deprecated and is retained for historical reasons only, it still works but time moves ever onward - please use the VB6 version instead that you will find here: https://github.com/yereverluvinunclebert/Panzer-Earth-gauge-VB6
+
 ![globe](https://github.com/yereverluvinunclebert/Steampunk-Rotating-Earth-Widget/assets/2788342/03b287af-dddf-4f88-b646-ad61db8bcbb4)
 
 ![globe-surround](https://github.com/yereverluvinunclebert/Steampunk-Rotating-Earth-Widget/assets/2788342/0d8c0dc6-f3ea-4bdc-aab4-9e6a27e151e8)
